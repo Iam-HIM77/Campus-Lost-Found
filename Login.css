@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    min-height:100vh;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Left Panel */
+
+.left-panel{
+    flex:1;
+
+    background:
+    linear-gradient(
+    rgba(10,77,104,0.85),
+    rgba(8,131,149,0.85)
+    );
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    padding:40px;
+}
+
+.overlay{
+    max-width:500px;
+}
+
+.overlay h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.overlay p{
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+/* Right Panel */
+
+.right-panel{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.form-container{
+    width:100%;
+    max-width:450px;
+}
+
+.form-container h2{
+    color:#0A4D68;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#777;
+    margin-bottom:30px;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    font-size:1rem;
+    transition:0.3s;
+}
+
+.input-group input:focus{
+    outline:none;
+    border-color:#088395;
+    box-shadow:0 0 10px rgba(8,131,149,0.2);
+}
+
+/* Remember Me + Forgot Password */
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:0.9rem;
+}
+
+.options a{
+    text-decoration:none;
+    color:#088395;
+    font-weight:500;
+}
+
+.options a:hover{
+    text-decoration:underline;
+}
+
+/* Login Button */
+
+.login-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#0A4D68;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    background:#088395;
+}
+
+/* Register Link */
+
+.register-link{
+    text-align:center;
+    margin-top:20px;
+}
+
+.register-link a{
+    text-decoration:none;
+    color:#088395;
+    font-weight:600;
+}
+
+.register-link a:hover{
+    text-decoration:underline;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .left-panel{
+        min-height:300px;
+    }
+
+    .overlay h1{
+        font-size:2.3rem;
+    }
+
+    .options{
+        flex-direction:column;
+        gap:10px;
+        align-items:flex-start;
+    }
+}
