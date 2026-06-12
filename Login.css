@@ -8,19 +8,19 @@
 }
 
 body{
-    background:#f4f7fc;
+    background:whitesmoke;
     min-height:100vh;
 }
 
 .container{
-    display:flex;
+    display:flex;    /*Wraps my left panel and right panel side-by-side*/
     min-height:100vh;
 }
 
 /* Left Panel */
 
 .left-panel{
-    flex:1;
+    flex:1;   /*Takes the full size*/
 
     background:
     linear-gradient(
@@ -56,7 +56,7 @@ body{
 /* Right Panel */
 
 .right-panel{
-    flex:1;
+    flex:1;  /*Takes the other remaining space*/
     display:flex;
     justify-content:center;
     align-items:center;
@@ -75,7 +75,7 @@ body{
 }
 
 .subtitle{
-    color:#777;
+    color:darkgray;
     margin-bottom:30px;
 }
 
@@ -84,7 +84,7 @@ body{
 }
 
 .input-group label{
-    display:block;
+    display:block;        /*Stack Vertically*/
     margin-bottom:8px;
     font-weight:500;
 }
@@ -98,9 +98,9 @@ body{
     transition:0.3s;
 }
 
-.input-group input:focus{
+.input-group input:focus{   /*When the user clicks inside the input or tabs on it*/
     outline:none;
-    border-color:#088395;
+    border-color:teal;
     box-shadow:0 0 10px rgba(8,131,149,0.2);
 }
 
@@ -108,15 +108,15 @@ body{
 
 .options{
     display:flex;
-    justify-content:space-between;
+    justify-content:space-between;    /*Remember me option above,  forgot password below*/
     align-items:center;
     margin-bottom:25px;
     font-size:0.9rem;
 }
 
 .options a{
-    text-decoration:none;
-    color:#088395;
+    text-decoration:none; /*Removes the underline on this link*/
+    color:teal;
     font-weight:500;
 }
 
