@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Lost Item</title>
+    <link rel="stylesheet" href="Report Lost.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Report Lost Item</h1>
+            <p>
+                Fill in the details below to report your lost item.
+            </p>
+        </div>
+
+        <div class="form-container">
+
+            <form>
+
+                <div class="input-group">
+                    <label>Item Name</label>
+                    <input type="text" placeholder="e.g. Samsung Phone">
+                </div>
+
+                <div class="input-group">
+                    <label for="category" name="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option>Select Category</option>
+                        <option>Phone</option>
+                        <option>Wallet</option>
+                        <option>Laptop</option>
+                        <option>ID Card</option>
+                        <option>Bag</option>
+                        <option>Books</option>
+                        <option>Keys</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Description</label>
+                    <textarea rows="5"
+                    placeholder="Describe the item"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="date-lost">Date Lost</label>
+                    <input type="date" id="date-lost" name="date-lost" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Location Lost</label>
+                    <input type="text"
+                    placeholder="Where did you lose it?">
+                </div>
+
+                <div class="input-group">
+                    <label for="item-image">Upload Image</label>
+                    <input type="file" id="item-image" name="item-image" accept="image/*" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Contact Information</label>
+                    <input type="text"
+                    placeholder="Phone number or email">
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Submit Report
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

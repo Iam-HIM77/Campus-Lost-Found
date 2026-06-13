@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+/* ===================
+   NAVBAR
+=================== */
+
+.navbar{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:600;
+    color:#0A4D68;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#088395;
+}
+
+/* ===================
+   WELCOME SECTION
+=================== */
+
+.welcome{
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(
+        135deg,
+        #0A4D68,
+        #088395
+    );
+    color:white;
+}
+
+.welcome h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.welcome p{
+    font-size:1.1rem;
+}
+
+/* ===================
+   STATISTICS
+=================== */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:60px 8%;
+}
+
+.stat-card{
+    background:white;
+    width:280px;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+}
+
+.stat-card i{
+    font-size:2.5rem;
+    color:#088395;
+    margin-bottom:15px;
+}
+
+.stat-card h2{
+    font-size:2rem;
+    color:#0A4D68;
+}
+
+/* ===================
+   QUICK ACTIONS
+=================== */
+
+.quick-actions{
+    padding:40px 8%;
+    text-align:center;
+}
+
+.quick-actions h2{
+    color:#0A4D68;
+    margin-bottom:30px;
+}
+
+.action-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    background:#0A4D68;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:50px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#088395;
+}
+
+/* ===================
+   ACTIVITIES
+=================== */
+
+.activities{
+    padding:60px 8%;
+}
+
+.activities h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0A4D68;
+}
+
+.activity-card{
+    background:white;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* ===================
+   RESPONSIVE
+=================== */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .welcome h1{
+        font-size:2.2rem;
+    }
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+.about-page{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+/* HEADER */
+
+.about-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.about-title{
+    color:#0A4D68;
+    margin-bottom:10px;
+}
+
+.about-subtitle{
+    color:#666;
+}
+
+/* CONTENT */
+
+.about-content-wrapper{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+
+.about-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+}
+
+.about-section-title{
+    color:#0A4D68;
+    margin-bottom:15px;
+}
+
+.about-text{
+    color:#555;
+    line-height:1.7;
+}
+
+.about-list{
+    padding-left:20px;
+    color:#555;
+}
+
+.about-list li{
+    margin-bottom:10px;
+}
